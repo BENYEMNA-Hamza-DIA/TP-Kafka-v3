@@ -4,8 +4,8 @@
 KAFKA_CONTAINER="kafka1"
 BOOTSTRAP_SERVER="kafka-lb:9092"
 TOPICS=("topic1" "topic2" "topic3")
-DURATION=120  # Durée en secondes (ex: 5 minutes)
-INTERVAL=5     # Intervalle entre chaque envoi
+DURATION=180  # Durée en secondes (ex: 3 minutes)
+INTERVAL=3     # Intervalle entre chaque envoi
 
 echo "📤 [INFO] Début de la production automatique de messages..."
 
