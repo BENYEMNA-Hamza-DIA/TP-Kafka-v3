@@ -1,7 +1,8 @@
 #!/bin/bash
 
 sudo bash start_kafka.sh
-
+echo "🚀 [INFO] Attente de la préparation de Kafka"
+sleep 60
 
 # 🔹 Création des topics
 echo "📌 [INFO] Création des topics..."
