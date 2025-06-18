@@ -15,7 +15,7 @@ GLOBAL_COUNT=1
 while (( $(date +%s) - START_TIME < DURATION )); do
     for TOPIC in "${TOPICS[@]}"; do
         for N in 1 2; do
-            MESSAGE="message-${TOPIC}-n-${GLOBAL_COUNT}"
+            MESSAGE="message-${TOPIC}-n${GLOBAL_COUNT}"
             echo "$MESSAGE" | docker-compose exec -T "$KAFKA_CONTAINER" kafka-console-producer \
                 --bootstrap-server "$BOOTSTRAP_SERVER" \
                 --topic "$TOPIC"
