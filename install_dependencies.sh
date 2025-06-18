@@ -2,11 +2,6 @@
 
 echo "🚀 [INFO] Installation des dépendances pour le déploiement Kafka + Monitoring"
 
-# 🔹 Mise à jour des paquets
-echo "🔄 [INFO] Mise à jour des paquets..."
-sudo apt update && sudo apt upgrade -y
-
-
 # 🔹 Installation de Java 17
 echo "☕ [INFO] Installation de Java 17..."
 sudo apt install -y openjdk-17-jdk
@@ -34,17 +29,6 @@ docker-compose --version
 echo "🚀 [INFO] Activation et démarrage de Docker..."
 sudo systemctl enable docker
 sudo systemctl start docker
-
-
-# 🔹 Vérification des versions installées
-echo "✅ [INFO] Vérification des installations..."
-docker --version
-java -version
-
-
-# 🔹 Rendre les scripts exécutables
-echo "🔑 [INFO] Rendre tous les scripts exécutables..."
-chmod +x *.sh
 
 
 # 🔹 Firewall : Ouverture des ports si UFW est actif
