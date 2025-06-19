@@ -15,7 +15,6 @@ sleep 5
 # 🔹 Lancer la production automatique de messages
 echo "🚀 [INFO] Lancement de la production automatique de messages..."
 sudo bash produce_messages_auto.sh
-sleep 10
 
 
 # Test de failover
