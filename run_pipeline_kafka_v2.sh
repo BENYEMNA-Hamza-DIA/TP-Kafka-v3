@@ -5,17 +5,17 @@ sudo bash start_kafka.sh
 # 🔹 Création des topics
 echo "📌 [INFO] Création des topics..."
 sudo bash create_topics.sh
-
+sleep 5
 
 # 🔹 Création des Consumer Groups et démarrage des Consumers
 echo "👥 [INFO] Création des Consumer Groups..."
 sudo bash create_consumers.sh
-
+sleep 5
 
 # 🔹 Lancer la production automatique de messages
 echo "🚀 [INFO] Lancement de la production automatique de messages..."
 sudo bash produce_messages_auto.sh
-sleep 5
+sleep 10
 
 
 # Test de failover
