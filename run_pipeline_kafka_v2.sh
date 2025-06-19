@@ -33,7 +33,7 @@ sleep 5
 
 # 🔹 Lancer la production automatique de messages
 echo "🚀 [INFO] Lancement de la production automatique de messages après fail over... (2/2)"
-sudo bash produce_messages_auto_v2.sh
+sudo bash produce_messages_auto_v3.sh
 
 
 echo "Attente de la fin de consommation des messages"
