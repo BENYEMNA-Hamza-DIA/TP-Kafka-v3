@@ -16,6 +16,10 @@ sleep 5
 echo "🚀 [INFO] Lancement de la production automatique de messages..."
 sudo bash produce_messages_auto.sh
 
+# 🔹 Récupération des messages consommés
+echo "📥 [INFO] Récupération des messages consommés..."
+sudo bash consume_messages_auto.sh
+
 
 # Test de failover
 echo "❗⚠️ [INFO] On simule une panne en arretant le noeud actif kafka1"
@@ -37,8 +41,8 @@ sleep 5
 
 
 # 🔹 Récupération des messages consommés
-#echo "📥 [INFO] Récupération des messages consommés..."
-#sudo bash consume_messages_auto.sh
+echo "📥 [INFO] Récupération des messages consommés..."
+sudo bash consume_messages_auto.sh
 
 
 echo "✅ [INFO] Pipeline Kafka terminé avec succès !"
