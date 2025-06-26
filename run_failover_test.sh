@@ -1,17 +1,3 @@
-#!/bin/bash
-
-sudo bash start_kafka.sh
-
-# 🔹 Création des topics
-echo "📌 [INFO] Création des topics..."
-sudo bash create_topics.sh
-sleep 5
-
-# 🔹 Création des Consumer Groups et démarrage des Consumers
-echo "👥 [INFO] Création des Consumer Groups..."
-sudo bash create_consumers.sh
-sleep 5
-
 # 🔹 Lancer la production automatique de messages
 echo "🚀 [INFO] Lancement de la production automatique de messages..."
 sudo bash produce_messages_auto_v2.sh
@@ -45,13 +31,5 @@ echo "📥 [INFO] Récupération des messages consommés..."
 sudo bash consume_messages_auto.sh
 
 
-echo "✅ [INFO] Pipeline Kafka terminé avec succès !"
-
-
-#echo "[INFO] Arret des conteneurs !"
-#docker-compose down
-
-#echo "[INFO] Suppression des données !"
-#docker volume prune -f
 
 
